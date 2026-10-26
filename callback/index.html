@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Tesla sign-in code</title>
+<body style="font-family:sans-serif;max-width:40em;margin:3em auto;padding:0 1em">
+<h2>Tesla approval received</h2><p>Copy this code and paste it into the secure box in Grok Bot:</p>
+<textarea id="c" readonly style="width:100%;height:6em;font-size:1em"></textarea>
+<p><button onclick="navigator.clipboard.writeText(document.getElementById('c').value)">Copy code</button></p>
+<script>const p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||('No code: '+(p.get('error')||'missing'));</script>
